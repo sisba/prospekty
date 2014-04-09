@@ -1,0 +1,29 @@
+---
+layout: default
+css:
+    - leaflet.css
+---
+<header>
+    <div class="content">
+        {% if page.subtitle-first %}
+            <h2>{{ page.subtitle }}</h2>
+            <h1>{{ page.title }}</h1>
+        {% else %}
+            <h1>{{ page.title }}</h1>
+            <h2>{{ page.subtitle }}</h2>
+        {% endif %}
+    </div>
+</header>
+<section class="main">
+    {{ content }}
+</section>
+<footer>
+    <div class="content">
+        <div class="address">
+            Björnsonova 6, 811 05 Bratislava<br />
+            Tel/Fax: 02 / 52 493 559
+        </div>
+        <div class="copy">© 2014 Systém inžinierskych služieb, spol. s r.o.</div>
+        <div class="url"><a href="http://sisba.sk">www.sisba.sk</a>
+    </div>
+</footer>
