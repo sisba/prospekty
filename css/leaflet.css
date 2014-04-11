@@ -1,5 +1,7 @@
 @page {
     margin: 0;
+    padding-bottom: 4cm;
+    size: A4;
 }
 
 a {
@@ -94,12 +96,14 @@ figure {
     clear: right;
     margin: 1em 0 1em 1.5em;
     background-color: #f7f7f7;
+    position: relative;
 }
 
 figure:first-child {
     margin-top: 0;
 }
 
+figcaption,
 figure .caption {
     font-weight: bold;
     font-size: 10pt;
@@ -110,9 +114,13 @@ figure img {
     display: block;
 }
 
+figure .footnotes {
+    padding: 0.5em;
+}
+
 figure table {
-    display: block;
     margin: 0;
+    width: 100%;
 }
 
 figure.block {
@@ -132,10 +140,18 @@ h2:first-child {
     margin-top: 0.5em;
 }
 
+figure + h2 {
+    margin-top: 1em;
+}
+
 h3 {
     font-size: 11pt;
     margin-top: 1.3em;
     margin-bottom: 0.3em;
+}
+
+figure + h3 {
+    margin-top: 1em;
 }
 
 p {
@@ -174,4 +190,18 @@ th {
 th,td {
     padding: 0.3em 0.5em;
     vertical-align: top;
+}
+
+td > ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+dl {
+    margin: 0.8em 0;
+}
+
+dd {
+    margin-left: 1.5em;
 }
