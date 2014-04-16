@@ -1,6 +1,6 @@
 ---
 layout: leaflet
-title: PCS plus
+title: PCSplus
 subtitle: kontinuálne meranie chlóru, pH a redox vo vode
 ---
 
